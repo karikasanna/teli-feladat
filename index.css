@@ -13,20 +13,20 @@ body{
     background-image: url(kepek/hatter.jpg);
     max-width: 1000px;
     margin: auto;
+    background: cover no-repeat;
 }
 
-.buttons{
-    grid-area: b;
+.menu{
+    grid-area: m;
     width: 200px;
 }
 
-.buttons a{
+.menu .button a{
     text-decoration: none;
     border: 1px solid dodgerblue;
     border-radius: 0.25rem;
     background-color: dodgerblue;
     color: white;
-    line-height: 3;
     padding: 0.5rem;
 }
 
@@ -67,11 +67,11 @@ body{
     grid-template-areas: 
     'h h h'
     'h h h'
-    'b i t'
-    'b i t'
-    'b i t'
-    'b i t'
-    'b i t'
-    'b i t'
+    'm i t'
+    'm i t'
+    'm i t'
+    'm i t'
+    'm i t'
+    'm i t'
     'f f f';
 }
