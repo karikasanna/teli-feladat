@@ -1,29 +1,47 @@
 .header{
-    background-color: red;
+    background-image: url(kepek/fejlec.jpg);
     grid-area: h;
+    height: 100%;
 }
 
-.main{
-    background-color: blue;
-    grid-area: m;
+body{
+    background-image: url(kepek/hatter.jpg);
+    max-width: 1000px;
+    margin: auto;
 }
 
-.aside{
-    background-color: green;
-    grid-area: a;
+.buttons{
+    grid-area: b;
+
+}
+
+.images{
+    grid-area: i;
+}
+
+.text{
+    grid-area: t;
 }
 
 .footer{
-    background-color: yellow;
+    background-color: dodgerblue;
     grid-area: f;
+    height: 100%;
 }
 
 .grid{
-    width: 100vw;
-    height:100vh;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
     display: grid;
     grid-template-areas: 
     'h h h'
-    'm m a'
+    'h h h'
+    'b i t'
+    'b i t'
+    'b i t'
+    'b i t'
+    'b i t'
     'f f f';
 }
