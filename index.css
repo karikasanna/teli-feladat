@@ -4,6 +4,11 @@
     height: 100%;
 }
 
+.header h1{
+    text-align: center;
+    color: white;
+}
+
 body{
     background-image: url(kepek/hatter.jpg);
     max-width: 1000px;
@@ -12,21 +17,45 @@ body{
 
 .buttons{
     grid-area: b;
+    width: 200px;
+}
 
+.buttons a{
+    text-decoration: none;
+    border: 1px solid dodgerblue;
+    border-radius: 0.25rem;
+    background-color: dodgerblue;
+    color: white;
+    line-height: 3;
+    padding: 0.5rem;
 }
 
 .images{
     grid-area: i;
+    width: 400px;
 }
 
 .text{
     grid-area: t;
+    width: 400px;
+    border-left: solid 1px black;
+    
+}
+
+.text p, .text h1, .text a{
+    max-width: 380px;
+    padding-left: 10px;
 }
 
 .footer{
     background-color: dodgerblue;
     grid-area: f;
     height: 100%;
+    
+}
+
+.footer p{
+    text-align: center;
 }
 
 .grid{
@@ -38,6 +67,7 @@ body{
     grid-template-areas: 
     'h h h'
     'h h h'
+    'b i t'
     'b i t'
     'b i t'
     'b i t'
