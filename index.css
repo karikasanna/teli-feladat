@@ -1,24 +1,25 @@
 .header{
     background-image: url(kepek/fejlec.jpg);
     grid-area: h;
-    height: 100%;
+    height: 160px;
 }
 
 .header h1{
     text-align: center;
     color: white;
+    padding-top: 35px;
 }
 
 body{
     background-image: url(kepek/hatter.jpg);
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     background: cover no-repeat;
 }
 
 .menu{
     grid-area: m;
-    width: 200px;
+    width: 250px;
 }
 
 
@@ -31,19 +32,41 @@ body{
 }
 
 
+.imgbox {
+    width: 180px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+  
+  .jobb {
+    float: left;
+    transform: rotate(7deg);
+  }
+  
+  .bal {
+    float: left;
+    transform: rotate(-8deg);
+  }
+
+
 .menu .button a{
     text-decoration: none;
     color: white;
 }
 
 .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 1fr);
     grid-area: i;
     width: 400px;
 }
 
 .text{
     grid-area: t;
-    width: 400px;
+    width: 380px;
     border-left: solid 1px black;
     
 }
@@ -62,17 +85,19 @@ body{
 
 .footer p{
     text-align: center;
+    height: 50px;
 }
 
 .grid{
     background-color: white;
     align-items: center;
     width: 100%;
-    height: 90vh;
     display: grid;
     grid-template-areas: 
     'h h h'
-    'h h h'
+    'm i t'
+    'm i t'
+    'm i t'
     'm i t'
     'm i t'
     'm i t'
