@@ -42,8 +42,7 @@
   }
   
   .text p,
-  .text h1,
-  .text a {
+  .text h2 {
     max-width: 380px;
     padding-left: 10px;
   }
