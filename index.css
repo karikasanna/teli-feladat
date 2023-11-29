@@ -1,83 +1,100 @@
 .header {
-    background-image: url(kepek/fejlec.jpg);
-    grid-area: h;
-    height: 160px;
-  }
-  
-  .header h1 {
-    text-align: center;
-    color: white;
-    padding-top: 35px;
-  }
-  
-  body {
-    background-image: url(kepek/hatter.jpg);
-    max-width: 1200px;
-    margin: auto;
-    background: cover no-repeat;
-  }
-  
-  .menu {
-    grid-area: m;
-    width: 250px;
-  }
-  
-  .button {
-    border: 1px solid dodgerblue;
-    border-radius: 0.5rem;
-    background-color: dodgerblue;
-    padding: 0.5rem;
-    text-align: center;
-  }
-  
-  .menu .button a {
-    text-decoration: none;
-    color: white;
-  }
+  background-image: url(kepek/fejlec.jpg);
+  grid-area: h;
+  height: 160px;
+}
 
-  .table {
-    grid-area: t;
-    width: 500px;
-  }
-  
-  .text {
-    grid-area: t;
-    width: 380px;
-    border-left: solid 1px black;
-  }
-  
-  .text p,
-  .text h2 {
-    max-width: 380px;
-    padding-left: 10px;
-  }
-  
-  .footer {
-    background-color: dodgerblue;
-    grid-area: f;
-    height: 100%;
-  }
-  
-  .footer p {
-    text-align: center;
-    height: 50px;
-  }
-  
-  .grid {
-    background-color: white;
-    align-items: center;
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-      "h h h"
-      "m i t"
-      "m i t"
-      "m i t"
-      "m i t"
-      "m i t"
-      "m i t"
-      "m i t"
-      "m i t"
-      "m i t"
-      "f f f";
-  }
+.header h1 {
+  text-align: center;
+  color: white;
+  padding-top: 35px;
+}
+
+body {
+  background-image: url(kepek/hatter.jpg);
+  max-width: 1200px;
+  margin: auto;
+  background: cover no-repeat;
+}
+
+.menu {
+  grid-area: m;
+  width: 250px;
+}
+
+.button {
+  border: 1px solid dodgerblue;
+  border-radius: 0.5rem;
+  background-color: dodgerblue;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.menu .button a {
+  text-decoration: none;
+  color: white;
+}
+
+.table {
+  grid-area: ta;
+  width: 500px;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin-block: 1rem;
+}
+
+th,
+tr,
+td {
+  border-bottom: 1px solid blue;
+}
+
+tr:nth-child(odd) {
+  background-color: lightblue;
+}
+
+.text {
+  grid-area: te;
+  width: 380px;
+  border-left: solid 1px black;
+}
+
+.text p,
+.text h2 {
+  max-width: 380px;
+  padding-left: 10px;
+}
+
+.footer {
+  background-color: dodgerblue;
+  grid-area: f;
+  height: 100%;
+}
+
+.footer p {
+  text-align: center;
+  height: 50px;
+}
+
+.grid {
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "h h h"
+    "m ta te"
+    "m ta te"
+    "m ta te"
+    "m ta te"
+    "m ta te"
+    "m ta te"
+    "m ta te"
+    "m ta te"
+    "m ta te"
+    "f f f";
+}
