@@ -34,6 +34,11 @@
     text-decoration: none;
     color: white;
   }
+
+  .table {
+    grid-area: t;
+    width: 500px;
+  }
   
   .text {
     grid-area: t;
