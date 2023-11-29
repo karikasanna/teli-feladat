@@ -1,0 +1,113 @@
+.header {
+    background-image: url(kepek/fejlec.jpg);
+    grid-area: h;
+    height: 160px;
+  }
+  
+  .header h1 {
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+  }
+  
+  body {
+    background-image: url(kepek/hatter.jpg);
+    max-width: 1200px;
+    margin: auto;
+    background: cover no-repeat;
+  }
+  
+  .menu {
+    grid-area: m;
+    width: 250px;
+  }
+  
+  .button {
+    border: 1px solid dodgerblue;
+    border-radius: 0.5rem;
+    background-color: dodgerblue;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .imgbox {
+    width: 180px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #bfbfbf;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+  
+  .jobb {
+    float: left;
+    transform: rotate(7deg);
+  }
+  
+  .bal {
+    float: left;
+    transform: rotate(-8deg);
+  }
+  
+  .menu .button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .felso{
+      padding-bottom: 40px;
+  }
+  .also{
+      padding-top: 40px;
+  }
+  
+  .images {
+      padding-block: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 1fr);
+    grid-area: i;
+    width: 400px;
+  }
+  
+  .text {
+    grid-area: t;
+    width: 380px;
+    border-left: solid 1px black;
+  }
+  
+  .text p,
+  .text h1,
+  .text a {
+    max-width: 380px;
+    padding-left: 10px;
+  }
+  
+  .footer {
+    background-color: dodgerblue;
+    grid-area: f;
+    height: 100%;
+  }
+  
+  .footer p {
+    text-align: center;
+    height: 50px;
+  }
+  
+  .grid {
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "h h h"
+      "m i t"
+      "m i t"
+      "m i t"
+      "m i t"
+      "m i t"
+      "m i t"
+      "m i t"
+      "m i t"
+      "m i t"
+      "f f f";
+  }
