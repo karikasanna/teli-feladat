@@ -30,43 +30,9 @@
     text-align: center;
   }
   
-  .imgbox {
-    width: 180px;
-    padding: 10px 10px 20px 10px;
-    border: 1px solid #bfbfbf;
-    background-color: white;
-    box-shadow: 10px 10px 5px #aaaaaa;
-  }
-  
-  .jobb {
-    float: left;
-    transform: rotate(7deg);
-  }
-  
-  .bal {
-    float: left;
-    transform: rotate(-8deg);
-  }
-  
   .menu .button a {
     text-decoration: none;
     color: white;
-  }
-  
-  .felso{
-      padding-bottom: 40px;
-  }
-  .also{
-      padding-top: 40px;
-  }
-  
-  .images {
-      padding-block: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4 1fr);
-    grid-area: i;
-    width: 400px;
   }
   
   .text {
