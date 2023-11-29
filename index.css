@@ -51,6 +51,7 @@ th,
 tr,
 td {
   border-bottom: 1px solid blue;
+  line-height: 2;
 }
 
 tr:nth-child(odd) {
