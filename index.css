@@ -70,6 +70,10 @@ tr:nth-child(odd) {
   padding-left: 10px;
 }
 
+.text, .menu, .table{
+    height: 700px
+}
+
 .footer {
   background-color: dodgerblue;
   grid-area: f;
